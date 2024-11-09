@@ -1,0 +1,264 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft JhengHei UI', Arial, sans-serif; /* Addington Medium font */
+    color: #f8f8f8;
+    display: flex;
+    background-color: #121212;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #00c500;
+}
+
+.profile h2 {
+    font-size: 1.2rem;
+    color: #00c500;
+}
+
+.nav-menu ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-menu ul li {
+    margin: 15px 0;
+}
+
+.nav-menu ul li a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #00c500;
+}
+
+/* Main Content */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    overflow: auto;
+}
+
+/* Hero Section with Dark Background */
+.hero {
+    height: 100vh;
+    background: url('C:/Users/iic08/OneDrive/Desktop/FLIPKART/testimages/2.jpg') no-repeat center center/cover;
+    color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-text {
+    max-width: 600px;
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Sections Styling */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: #f8f8f8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #00c500;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ul {
+      text-align: justify;
+      width: 50%;
+    }
+
+p {
+    color: #dcdcdc;
+    font-size: 1rem;
+}
+
+/* Project List */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.project-item {
+    background-color: #333333;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.project-item:hover {
+    background-color: #444444;
+}
+
+/* Modal for Project Details */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    color: #f8f8f8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #00c500;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 150px;
+    }
+
+    .content {
+        margin-left: 150px;
+    }
+
+    .profile h2 {
+        font-size: 1rem;
+    }
+}
+ .skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.skills-box {
+  flex: 9;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.skills-list {
+  list-style-type: disc;  /* Show bullet points */
+  margin: 0;
+  padding-left: 20px; /* Indentation for bullets */
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+  text-align: justify; /* Justify text inside each item */
+}
+#contact {
+    display: flex;
+    flex-direction: column; /* Stack heading and details vertically */
+    align-items: center; /* Center align the content horizontally */
+    justify-content: center; /* Vertically center the content */
+    height: 100vh; /* Ensure the section takes full viewport height */
+    padding: 0; /* Remove padding from the section */
+}
+
+#contact h2 {
+    margin-bottom: 10px; /* Space between heading and contact details */
+}
+
+.contact-details {
+    text-align: justify; /* Justify the text */
+    max-width: 600px; /* Restrict width for better readability */
+    width: 100%;
+    padding: 0; /* Remove padding inside the contact details */
+    margin: 0; /* Remove margin */
+}
+

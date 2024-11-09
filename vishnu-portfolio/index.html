@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Gowda H P Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+	
+
+</head>
+<body>
+    <!-- Sidebar with Profile Icon, Name, and Navigation Links -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="C:\Users\iic08\OneDrive\Desktop\vishnu-portfolio\th.jpg" alt="Profile Picture" class="profile-img">
+            <h2>Vishnu Gowda H P</h2>
+			<h4>vishnuhp2003@gmail.com</h4>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+        <!-- Hero Section with Parallax Effect -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to My Portfolio</h1>
+                <p></p>
+            </div>
+        </section>
+
+        <!-- Portfolio Sections -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p style="text-align:justify" >As a dedicated and driven electronics student, I am deeply passionate about bridging the gap between theoretical knowledge and practical application. Throughout my academic journey, I have developed a strong understanding of electronic systems, design principles, and the latest technological advancements in the field. Now, I am eager to apply this foundation to real-world projects, where I can not only contribute effectively but also expand my knowledge by working alongside experienced professionals.
+
+My enthusiasm extends to gaining hands-on experience with cutting-edge tools and technologies, which will allow me to refine my technical abilities and problem-solving skills. I am particularly excited about the opportunity to work on challenging projects that require creative thinking, collaboration, and continuous learning. I thrive in environments that foster teamwork and innovation, and I am keen to make meaningful contributions to the success of any project I am involved in.
+
+My goal is to deepen my understanding of electronic design by taking on complex tasks that challenge my current skill set. By collaborating with professionals in the field, I aim to further develop my expertise and stay current with industry trends, ensuring that I am equipped to make a significant impact in the world of electronics.</p>
+        </section>
+
+
+        <section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skills-box">
+      <h3>Technical Skills</h3>
+      <ul class="skills-list">
+        <li>C++</li>
+        <li>VLSI (Virtuoso Cadence)</li>
+        <li>Embedded Controller (Vivado)</li>
+        <li>Verilog</li>
+        <li>Python (Intermediate)</li>
+      </ul>
+    </div>
+    <div class="skills-box">
+      <h3>Soft Skills</h3>
+      <ul class="skills-list">
+        <li>Communication&Listening Skills</li>
+        <li>Time Management</li>
+        <li>Problem-solving</li>
+        <li>Leadership</li>
+		<li>Competency Building</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+        <!-- Projects Section with Popup -->
+     <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-item" onclick="showProjectDetails(this)" 
+                     data-title="Laser Weed Remover" 
+                     data-description="Description: Developed an autonomous laser weed remover using an Arduino microcontroller and Arduino C++, designed to detect and eliminate weeds in agricultural fields as an eco-friendly alternative to chemical herbicides, minimizing environmental impact. The system uses infrared or optical sensors to distinguish weeds from crops based on size and shape, ensuring precise targeting of only unwanted plants. A high-powered laser then eliminates the identified weeds accurately, leaving crops unaffected. The Arduino microcontroller controls the weed detection algorithms, sensor data processing, and laser positioning for efficient operation. This laser weed remover reduces the need for manual labor and chemical treatments, autonomously detecting and removing weeds in real-time. It supports sustainable farming practices, benefiting both crop health and environmental sustainability.">
+                    Laser Weed Remover
+                </div>
+                <div class="project-item" onclick="showProjectDetails(this)" 
+                     data-title="Automatic street cleaner with sensors" 
+                     data-description="Description :Developed an autonomous street-cleaning machine using an Arduino microcontroller, designed to efficiently clean urban streets and public spaces. This machine is equipped with a variety of sensors and intelligent systems that enable it to navigate and clean independently, detecting obstacles and adjusting its path as needed. The system minimizes the need for human intervention, making it a cost-effective solution that significantly reduces both labor and operational expenses associated with manual street cleaning. This autonomous machine enhances urban cleanliness, providing a sustainable approach to maintaining public spaces.">
+                    Automatic street cleaner with sensors
+                </div>
+                <div class="project-item" onclick="showProjectDetails(this)" 
+                     data-title="Line Following Robot" 
+                     data-description="Description: Developed an autonomous mobile device designed to detect and follow a predetermined path with high accuracy. Using sensors to monitor its alignment, the device adjusts motor speed and direction to stay precisely on course, effectively navigating curves and intersections. The combination of precise sensor calibration and responsive control algorithms enables the device to maintain alignment even on complex paths. This project won second prize in an institute-level robotics competition, demonstrating its effectiveness and reliability in path-following tasks.">
+                    Line Following Robot
+                </div>
+				<div class="project-item" onclick="showProjectDetails(this)" 
+                     data-title="Arc welding machine" 
+                     data-description="Description: Developed a device used to join metals by generating an electric arc between an electrode and the base material, effectively creating high-quality welds with strong, defect-free joints. This device is versatile, capable of handling various metals and thicknesses with consistent performance. Its reliable weld quality and adaptability made it stand out, earning first prize in a school-level project competition.">
+                    Arc welding machine
+                </div>
+				<div class="project-item" onclick="showProjectDetails(this)" 
+                     data-title="Autonomous Agricultural Pesticide Spraying Robot" 
+                     data-description="Description :Developed an autonomous device designed to navigate farmlands, identify crops, and apply pesticides with precision. Utilizing GPS and advanced sensors, the device accurately maps and follows field paths, ensuring that only target crops are sprayed. Its reliable navigation and consistent spray patterns contribute to efficient pesticide use, while its adaptability to different field conditions enhances its versatility in agricultural settings. This solution promotes effective crop care by reducing manual labor and minimizing pesticide waste.">
+                    Autonomous Agricultural Pesticide Spraying Robot
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <table style="border-collapse: collapse; width: 100%; text-align: left;">
+    <tr>
+        <td><strong>Bachelor of Electronics And Communication</strong></td>
+        <td>BMS Institute Of Technology And Management</td>
+        <td>CGPA - 7.93</td>
+        <td>Expected 2025</td>
+    </tr>
+    <tr>
+        <td><strong>12th - State Board</strong></td>
+        <td>Expert PreUniversity College</td>
+        <td>Percentage - 97.833%</td>
+        <td>2019 - 2021</td>
+    </tr>
+    <tr>
+        <td><strong>10th - State Board</strong></td>
+        <td>Navachethana English Medium High School</td>
+        <td>Percentage - 91.36%</td>
+        <td>2009 - 2020</td>
+    </tr>
+</table>
+
+        </section>
+
+        <section id="activities">
+            <h2>Activities</h2>
+            <p>Travelling ⋄ Trekking ⋄ Exploring new places ⋄ Interested in modeling ⋄ Agricultural activities</p>
+        </section>
+
+        <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-details">
+        <p><strong>Name:</strong> Vishnu Gowda H P</p>
+        <p><strong>Phone:</strong> +91 6361903661</p>
+        <p><strong>Location:</strong> Yelahanka, Bengaluru</p>
+        <p><strong>Email:</strong>vishnuhp2003@gmail.com</p>
+        <p><strong>LinkedIn:</strong>linkedin.com/in/vishnu-gowda-h-p</p>
+		<p><strong>Github Page:</strong>https://github.com/vishnugowdahp</p>
+
+    </div>
+</section>
+
+    </main>
+
+    <!-- Popup Modal for Project Details -->
+   <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeProjectDetails()">&times;</span>
+            <h3 id="projectTitle">Project Title</h3>
+            <p id="projectDescription">Project details go here...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
